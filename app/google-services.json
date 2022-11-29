@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537425970108",
+    "project_id": "drinkstyle-5d574",
+    "storage_bucket": "drinkstyle-5d574.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537425970108:android:bb5dad7d7afb3e6867e1b9",
+        "android_client_info": {
+          "package_name": "com.lectures.drinkstyle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537425970108-ph6ppm8ppt9t1jf28tt9143825dgpdd6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_prwT_9mJLqwq_me0uhf75IzH5dLvxeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537425970108-ph6ppm8ppt9t1jf28tt9143825dgpdd6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

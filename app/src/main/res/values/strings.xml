@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DrinkStyle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">home fragment</string>
+    <string name="favorites_fragment">favorites fragment</string>
+    <string name="categories_fragment">categories fragment</string>
+</resources>

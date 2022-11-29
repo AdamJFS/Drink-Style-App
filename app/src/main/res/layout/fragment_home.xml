@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drinkphotographer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lectures.drinkstyle.activites.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/indieflower"
+            android:text="Cocktail Recipes"
+            android:textColor="@color/hard_green"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_marginTop="0dp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_search"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_would_like_to_see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/indieflower"
+        android:text="What would you like to Drink..."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/linear_header"
+        app:layout_constraintStart_toStartOf="@id/linear_header"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/random_drink_card"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_would_like_to_see">
+
+
+        <ImageView
+            android:id="@+id/img_random_drink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/img_youtube"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/ic_youtube_icon"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_over_popular_drinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:fontFamily="@font/indieflower"
+        android:text="Popular Drinks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/tv_would_like_to_see"
+        app:layout_constraintTop_toBottomOf="@id/random_drink_card"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view_drinks_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_over_popular_drinks"/>
+
+    <TextView
+        android:id="@+id/tv_alcoholic_drinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/indieflower"
+        android:text="Alcoholic Drinks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/rec_view_drinks_popular"
+        app:layout_constraintTop_toBottomOf="@id/rec_view_drinks_popular"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_alcoholic_drinks">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_view_alcoholic"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+    </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
